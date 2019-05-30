@@ -7,7 +7,6 @@ import ca.uhn.fhir.jpa.provider.SystemProviderDstu2Test;
 import ca.uhn.fhir.jpa.rp.r4.ObservationResourceProvider;
 import ca.uhn.fhir.jpa.rp.r4.OrganizationResourceProvider;
 import ca.uhn.fhir.jpa.rp.r4.PatientResourceProvider;
-import ca.uhn.fhir.jpa.testutil.RandomServerPortProvider;
 import ca.uhn.fhir.rest.api.Constants;
 import ca.uhn.fhir.rest.api.EncodingEnum;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
@@ -49,6 +48,8 @@ import java.util.concurrent.TimeUnit;
 
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
+
+import ca.uhn.fhir.util.JettyPortUtil;
 
 public class EmptyIndexesR4Test extends BaseJpaR4Test {
 	private static RestfulServer myRestServer;
@@ -93,13 +94,10 @@ public class EmptyIndexesR4Test extends BaseJpaR4Test {
 
 			restServer.setPlainProviders(mySystemProvider);
 
-			int myPort = RandomServerPortProvider.findFreePort();
-			ourServer = new Server(myPort);
+			ourServer = new Server(0);
 
 			ServletContextHandler proxyHandler = new ServletContextHandler();
 			proxyHandler.setContextPath("/");
-
-			ourServerBase = "http://localhost:" + myPort + "/fhir/context";
 
 			ServletHolder servletHolder = new ServletHolder();
 			servletHolder.setServlet(restServer);
@@ -110,6 +108,8 @@ public class EmptyIndexesR4Test extends BaseJpaR4Test {
 
 			ourServer.setHandler(proxyHandler);
 			ourServer.start();
+            int myPort = JettyPortUtil.getPortForStartedServer(ourServer);
+            ourServerBase = "http://localhost:" + myPort + "/fhir/context";
 
 			PoolingHttpClientConnectionManager connectionManager = new PoolingHttpClientConnectionManager(5000, TimeUnit.MILLISECONDS);
 			HttpClientBuilder builder = HttpClientBuilder.create();

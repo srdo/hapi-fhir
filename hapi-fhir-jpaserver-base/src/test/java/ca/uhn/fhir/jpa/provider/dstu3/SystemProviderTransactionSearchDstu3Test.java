@@ -24,11 +24,11 @@ import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.jpa.dao.DaoConfig;
 import ca.uhn.fhir.jpa.dao.dstu3.BaseJpaDstu3Test;
 import ca.uhn.fhir.jpa.rp.dstu3.*;
-import ca.uhn.fhir.jpa.testutil.RandomServerPortProvider;
 import ca.uhn.fhir.rest.api.EncodingEnum;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
 import ca.uhn.fhir.rest.client.interceptor.SimpleRequestHeaderInterceptor;
 import ca.uhn.fhir.rest.server.RestfulServer;
+import ca.uhn.fhir.util.JettyPortUtil;
 import ca.uhn.fhir.util.TestUtil;
 
 public class SystemProviderTransactionSearchDstu3Test extends BaseJpaDstu3Test {
@@ -77,13 +77,10 @@ public class SystemProviderTransactionSearchDstu3Test extends BaseJpaDstu3Test {
 
 			restServer.setPlainProviders(mySystemProvider);
 
-			int myPort = RandomServerPortProvider.findFreePort();
-			ourServer = new Server(myPort);
+			ourServer = new Server(0);
 
 			ServletContextHandler proxyHandler = new ServletContextHandler();
-			proxyHandler.setContextPath("/");
-
-			ourServerBase = "http://localhost:" + myPort + "/fhir/context";
+			proxyHandler.setContextPath("/");			
 
 			ServletHolder servletHolder = new ServletHolder();
 			servletHolder.setServlet(restServer);
@@ -94,6 +91,8 @@ public class SystemProviderTransactionSearchDstu3Test extends BaseJpaDstu3Test {
 
 			ourServer.setHandler(proxyHandler);
 			ourServer.start();
+            int myPort = JettyPortUtil.getPortForStartedServer(ourServer);
+            ourServerBase = "http://localhost:" + myPort + "/fhir/context";
 
 			PoolingHttpClientConnectionManager connectionManager = new PoolingHttpClientConnectionManager(5000, TimeUnit.MILLISECONDS);
 			HttpClientBuilder builder = HttpClientBuilder.create();

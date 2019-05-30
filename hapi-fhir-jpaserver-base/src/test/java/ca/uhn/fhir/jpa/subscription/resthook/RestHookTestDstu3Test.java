@@ -17,7 +17,6 @@ import ca.uhn.fhir.rest.api.MethodOutcome;
 import ca.uhn.fhir.rest.server.IResourceProvider;
 import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.rest.server.exceptions.UnprocessableEntityException;
-import ca.uhn.fhir.util.PortUtil;
 import com.google.common.collect.Lists;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
@@ -37,6 +36,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import static org.junit.Assert.*;
+
+import ca.uhn.fhir.util.JettyPortUtil;
 
 /**
  * Test the rest-hook subscriptions
@@ -571,16 +572,13 @@ public class RestHookTestDstu3Test extends BaseResourceProviderDstu3Test {
 
 	@BeforeClass
 	public static void startListenerServer() throws Exception {
-		ourListenerPort = PortUtil.findFreePort();
 		ourListenerRestServer = new RestfulServer(FhirContext.forDstu3());
-		ourListenerServerBase = "http://localhost:" + ourListenerPort + "/fhir/context";
-		ourNotificationListenerServer = "http://localhost:" + ourListenerPort + "/fhir/subscription";
 
 		ObservationListener obsListener = new ObservationListener();
 		CommunicationRequestListener crListener = new CommunicationRequestListener();
 		ourListenerRestServer.setResourceProviders(obsListener, crListener);
 
-		ourListenerServer = new Server(ourListenerPort);
+		ourListenerServer = new Server(0);
 		ourNotificationServlet = new NotificationServlet();
 
 		ServletContextHandler proxyHandler = new ServletContextHandler();
@@ -595,6 +593,9 @@ public class RestHookTestDstu3Test extends BaseResourceProviderDstu3Test {
 
 		ourListenerServer.setHandler(proxyHandler);
 		ourListenerServer.start();
+        ourListenerPort = JettyPortUtil.getPortForStartedServer(ourListenerServer);
+        ourListenerServerBase = "http://localhost:" + ourListenerPort + "/fhir/context";
+        ourNotificationListenerServer = "http://localhost:" + ourListenerPort + "/fhir/subscription";
 	}
 
 	@AfterClass

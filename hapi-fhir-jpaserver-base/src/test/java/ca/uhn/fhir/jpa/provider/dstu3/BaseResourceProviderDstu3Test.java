@@ -15,7 +15,6 @@ import ca.uhn.fhir.rest.client.api.ServerValidationModeEnum;
 import ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor;
 import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.rest.server.interceptor.CorsInterceptor;
-import ca.uhn.fhir.util.PortUtil;
 import ca.uhn.fhir.util.TestUtil;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
@@ -45,6 +44,8 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
+
+import ca.uhn.fhir.util.JettyPortUtil;
 
 
 public abstract class BaseResourceProviderDstu3Test extends BaseJpaDstu3Test {
@@ -84,11 +85,7 @@ public abstract class BaseResourceProviderDstu3Test extends BaseJpaDstu3Test {
 		myFhirCtx.setParserErrorHandler(new StrictErrorHandler());
 
 		if (ourServer == null) {
-			ourPort = PortUtil.findFreePort();
-
 			ourRestServer = new RestfulServer(myFhirCtx);
-
-			ourServerBase = "http://localhost:" + ourPort + "/fhir/context";
 
 			ourRestServer.registerProviders(myResourceProviders.createProviders());
 
@@ -106,7 +103,7 @@ public abstract class BaseResourceProviderDstu3Test extends BaseJpaDstu3Test {
 
 			ourPagingProvider = myAppCtx.getBean(DatabaseBackedPagingProvider.class);
 
-			Server server = new Server(ourPort);
+			Server server = new Server(0);
 
 			ServletContextHandler proxyHandler = new ServletContextHandler();
 			proxyHandler.setContextPath("/");
@@ -149,6 +146,8 @@ public abstract class BaseResourceProviderDstu3Test extends BaseJpaDstu3Test {
 
 			server.setHandler(proxyHandler);
 			server.start();
+            ourPort = JettyPortUtil.getPortForStartedServer(server);
+            ourServerBase = "http://localhost:" + ourPort + "/fhir/context";
 
 			WebApplicationContext wac = WebApplicationContextUtils.getWebApplicationContext(subsServletHolder.getServlet().getServletConfig().getServletContext());
 			myValidationSupport = wac.getBean(JpaValidationSupportChainDstu3.class);

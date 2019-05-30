@@ -4,7 +4,6 @@ import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
 import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.rest.server.interceptor.VerboseLoggingInterceptor;
-import ca.uhn.fhir.util.PortUtil;
 import ca.uhn.fhir.util.TestUtil;
 import com.google.common.base.Charsets;
 import org.apache.commons.io.FileUtils;
@@ -24,6 +23,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import static org.junit.Assert.assertEquals;
+
+import ca.uhn.fhir.util.JettyPortUtil;
 
 public class ExportConceptMapToCsvCommandR4Test {
 	private static final org.slf4j.Logger ourLog = org.slf4j.LoggerFactory.getLogger(ExportConceptMapToCsvCommandR4Test.class);
@@ -54,8 +55,7 @@ public class ExportConceptMapToCsvCommandR4Test {
 
 	@BeforeClass
 	public static void beforeClass() throws Exception {
-		ourPort = PortUtil.findFreePort();
-		ourServer = new Server(ourPort);
+		ourServer = new Server(0);
 
 		ServletHandler servletHandler = new ServletHandler();
 
@@ -68,6 +68,7 @@ public class ExportConceptMapToCsvCommandR4Test {
 		ourServer.setHandler(servletHandler);
 
 		ourServer.start();
+        ourPort = JettyPortUtil.getPortForStartedServer(ourServer);
 
 		ourBase = "http://localhost:" + ourPort;
 
