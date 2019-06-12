@@ -103,7 +103,6 @@ public class BinaryClientTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

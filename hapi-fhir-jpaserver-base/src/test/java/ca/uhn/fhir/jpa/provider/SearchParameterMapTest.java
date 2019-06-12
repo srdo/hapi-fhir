@@ -19,7 +19,6 @@ public class SearchParameterMapTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	private static FhirContext ourCtx = FhirContext.forDstu3();

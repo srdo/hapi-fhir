@@ -95,7 +95,6 @@ public class InterceptorTest {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
 		ourServer.stop();
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

@@ -47,7 +47,6 @@ public class ETagClientDstu2Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@Before

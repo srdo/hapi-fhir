@@ -145,6 +145,5 @@ public class ClientServerValidationTestHl7OrgDstu2 {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 }

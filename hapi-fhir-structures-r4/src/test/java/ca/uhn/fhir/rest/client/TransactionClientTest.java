@@ -151,7 +151,6 @@ public class TransactionClientTest {
 
   @AfterClass
   public static void afterClassClearContext() {
-    TestUtil.clearAllStaticFieldsForUnitTest();
   }
 
 }

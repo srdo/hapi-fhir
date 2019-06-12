@@ -38,7 +38,6 @@ public class BaseHapiFhirDaoTest  extends BaseJpaTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@Test

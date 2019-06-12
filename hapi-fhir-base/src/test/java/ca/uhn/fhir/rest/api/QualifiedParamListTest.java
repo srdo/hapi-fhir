@@ -39,7 +39,6 @@ public class QualifiedParamListTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

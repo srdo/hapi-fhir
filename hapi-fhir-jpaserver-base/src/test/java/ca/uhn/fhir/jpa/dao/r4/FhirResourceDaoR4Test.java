@@ -3870,7 +3870,6 @@ public class FhirResourceDaoR4Test extends BaseJpaR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	public static void assertConflictException(String theResourceType, ResourceVersionConflictException e) {

@@ -25,7 +25,6 @@ public class RuntimeResourceDefinitionDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

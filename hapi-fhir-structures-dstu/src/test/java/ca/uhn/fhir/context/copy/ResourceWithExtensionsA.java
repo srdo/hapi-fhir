@@ -217,7 +217,6 @@ public class ResourceWithExtensionsA extends BaseResource {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

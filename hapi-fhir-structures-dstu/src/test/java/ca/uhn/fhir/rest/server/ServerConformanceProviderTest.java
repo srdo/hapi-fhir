@@ -224,7 +224,6 @@ public class ServerConformanceProviderTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

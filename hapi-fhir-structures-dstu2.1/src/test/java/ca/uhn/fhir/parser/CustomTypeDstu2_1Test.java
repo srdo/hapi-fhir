@@ -36,7 +36,6 @@ public class CustomTypeDstu2_1Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

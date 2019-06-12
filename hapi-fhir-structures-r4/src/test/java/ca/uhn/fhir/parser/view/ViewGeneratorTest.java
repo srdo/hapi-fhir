@@ -20,7 +20,6 @@ public class ViewGeneratorTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@Test

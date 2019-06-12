@@ -162,7 +162,6 @@ public class ThreadLocalCapturingInterceptorR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

@@ -34,7 +34,6 @@ public class DefaultThymeleafNarrativeGeneratorDstu2Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

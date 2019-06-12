@@ -218,7 +218,6 @@ public class RestfulServerSelfReferenceTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

@@ -75,7 +75,6 @@ public class BaseCodingDtTest {
 
  	@AfterClass
  	public static void afterClassClearContext() {
- 		TestUtil.clearAllStaticFieldsForUnitTest();
  	}
 
 }

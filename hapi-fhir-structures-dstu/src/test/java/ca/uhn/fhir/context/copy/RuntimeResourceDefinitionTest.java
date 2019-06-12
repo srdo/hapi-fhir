@@ -155,7 +155,6 @@ public class RuntimeResourceDefinitionTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

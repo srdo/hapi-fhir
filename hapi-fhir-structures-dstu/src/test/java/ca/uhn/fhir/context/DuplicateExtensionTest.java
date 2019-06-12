@@ -84,7 +84,6 @@ public class DuplicateExtensionTest extends TestCase {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

@@ -19,7 +19,6 @@ public class ElementWithExtensionR4Test {
 
     @AfterClass
     public static void afterClassClearContext() {
-        TestUtil.clearAllStaticFieldsForUnitTest();
     }
 
     @Test

@@ -641,6 +641,5 @@ public class TerminologySvcImplDstu3Test extends BaseJpaDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 }

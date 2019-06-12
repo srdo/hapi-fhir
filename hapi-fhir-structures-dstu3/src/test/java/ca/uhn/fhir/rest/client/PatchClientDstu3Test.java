@@ -120,7 +120,6 @@ public class PatchClientDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

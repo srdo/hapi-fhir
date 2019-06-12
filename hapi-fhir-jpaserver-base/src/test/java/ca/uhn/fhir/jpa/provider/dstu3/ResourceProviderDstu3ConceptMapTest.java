@@ -21,7 +21,6 @@ public class ResourceProviderDstu3ConceptMapTest extends BaseResourceProviderDst
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@Before

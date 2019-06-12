@@ -32,7 +32,6 @@ public class FhirResourceDaoR4ExternalReferenceTest extends BaseJpaR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 	
 	@Before

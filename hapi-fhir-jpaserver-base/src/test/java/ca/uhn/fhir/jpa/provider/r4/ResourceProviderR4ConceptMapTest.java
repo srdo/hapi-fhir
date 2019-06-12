@@ -21,7 +21,6 @@ public class ResourceProviderR4ConceptMapTest extends BaseResourceProviderR4Test
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@Before

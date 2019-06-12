@@ -54,7 +54,6 @@ public class TokenOrListParamDstu2Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

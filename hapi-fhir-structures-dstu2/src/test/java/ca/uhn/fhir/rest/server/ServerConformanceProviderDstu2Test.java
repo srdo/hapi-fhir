@@ -700,7 +700,6 @@ public class ServerConformanceProviderDstu2Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	public static class ConditionalProvider implements IResourceProvider {

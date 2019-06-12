@@ -819,7 +819,6 @@ public class BaseDateTimeDtDstu2Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

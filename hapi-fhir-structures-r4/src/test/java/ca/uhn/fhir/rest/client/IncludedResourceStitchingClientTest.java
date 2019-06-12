@@ -297,7 +297,6 @@ public class IncludedResourceStitchingClientTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

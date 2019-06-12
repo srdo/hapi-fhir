@@ -30,7 +30,6 @@ public class Dstu2BundleFactoryTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@Before

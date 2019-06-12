@@ -49,7 +49,6 @@ public class JsonParserHl7OrgDstu2Test {
 
   @AfterClass
   public static void afterClassClearContext() {
-    TestUtil.clearAllStaticFieldsForUnitTest();
   }
   
 	@Test

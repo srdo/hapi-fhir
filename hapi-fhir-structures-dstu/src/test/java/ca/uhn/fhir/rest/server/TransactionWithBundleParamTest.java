@@ -170,7 +170,6 @@ public class TransactionWithBundleParamTest {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
 		ourServer.stop();
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 	
 	

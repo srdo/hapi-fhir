@@ -1084,7 +1084,6 @@ public class QuestionnaireResponseValidatorDstu3Test {
 	public static void afterClassClearContext() {
 		myDefaultValidationSupport.flush();
 		myDefaultValidationSupport = null;
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

@@ -71,7 +71,6 @@ public class AbstractJaxRsResourceProviderDstu3Test {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
         JettyUtil.closeServer(jettyServer);
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	private void compareResultUrl(String url, IBaseResource resource) {

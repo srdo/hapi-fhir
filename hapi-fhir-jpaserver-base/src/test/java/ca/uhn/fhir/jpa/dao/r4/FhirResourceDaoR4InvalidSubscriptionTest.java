@@ -136,7 +136,6 @@ public class FhirResourceDaoR4InvalidSubscriptionTest extends BaseJpaR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

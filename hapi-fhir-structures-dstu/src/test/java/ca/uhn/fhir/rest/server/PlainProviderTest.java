@@ -168,7 +168,6 @@ public class PlainProviderTest {
 	
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	private static Organization createOrganization() {

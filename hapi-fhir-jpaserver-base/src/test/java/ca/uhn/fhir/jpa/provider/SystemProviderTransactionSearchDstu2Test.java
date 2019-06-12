@@ -298,7 +298,6 @@ public class SystemProviderTransactionSearchDstu2Test extends BaseJpaDstu2Test {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
 		JettyUtil.closeServer(ourServer);
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

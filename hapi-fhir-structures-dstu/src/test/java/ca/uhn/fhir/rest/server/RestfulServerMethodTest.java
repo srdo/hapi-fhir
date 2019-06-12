@@ -1062,7 +1062,6 @@ public class RestfulServerMethodTest {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
 		ourServer.stop();
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

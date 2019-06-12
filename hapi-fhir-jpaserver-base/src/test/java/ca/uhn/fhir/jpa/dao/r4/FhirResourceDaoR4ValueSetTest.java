@@ -39,7 +39,6 @@ public class FhirResourceDaoR4ValueSetTest extends BaseJpaR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

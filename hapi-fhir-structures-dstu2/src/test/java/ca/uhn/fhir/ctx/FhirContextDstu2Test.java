@@ -35,7 +35,6 @@ public class FhirContextDstu2Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@Test(expected=DataFormatException.class)

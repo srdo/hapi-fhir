@@ -129,6 +129,5 @@ public class CompositionDocumentDstu3Test extends BaseResourceProviderDstu3Test 
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 }

@@ -3473,7 +3473,6 @@ public class FhirResourceDaoDstu3Test extends BaseJpaDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	public static void assertConflictException(ResourceVersionConflictException e) {

@@ -404,7 +404,6 @@ public class FhirResourceDaoR4ValidateTest extends BaseJpaR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

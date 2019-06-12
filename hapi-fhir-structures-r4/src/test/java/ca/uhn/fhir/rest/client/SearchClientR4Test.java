@@ -235,7 +235,6 @@ public class SearchClientR4Test {
 
   @AfterClass
   public static void afterClassClearContext() {
-    TestUtil.clearAllStaticFieldsForUnitTest();
   }
 
   public interface ILocationClient extends IRestfulClient {

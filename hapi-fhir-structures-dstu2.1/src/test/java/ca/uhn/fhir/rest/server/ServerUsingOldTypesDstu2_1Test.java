@@ -25,7 +25,6 @@ public class ServerUsingOldTypesDstu2_1Test {
 	private static FhirContext ourCtx = FhirContext.forDstu2_1();
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@Test

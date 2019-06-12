@@ -112,7 +112,6 @@ public class HookInterceptorR4Test extends BaseResourceProviderR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

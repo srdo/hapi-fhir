@@ -74,7 +74,6 @@ public class AbstractJaxRsResourceProviderTest {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
         JettyUtil.closeServer(jettyServer);
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	private Patient createPatient(long id) {

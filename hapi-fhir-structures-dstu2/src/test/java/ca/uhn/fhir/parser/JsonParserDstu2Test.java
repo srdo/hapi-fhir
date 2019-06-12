@@ -2124,7 +2124,6 @@ public class JsonParserDstu2Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	private static final class TimestampFields {

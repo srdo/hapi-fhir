@@ -20,7 +20,6 @@ public class ElementWithExtensionDstu3Test {
 
     @AfterClass
     public static void afterClassClearContext() {
-        TestUtil.clearAllStaticFieldsForUnitTest();
     }
 
     @Test

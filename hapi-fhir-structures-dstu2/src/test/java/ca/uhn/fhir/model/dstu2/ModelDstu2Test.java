@@ -83,7 +83,6 @@ public class ModelDstu2Test {
 	
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

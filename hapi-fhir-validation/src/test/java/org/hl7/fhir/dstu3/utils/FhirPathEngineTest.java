@@ -67,7 +67,6 @@ public class FhirPathEngineTest {
 
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

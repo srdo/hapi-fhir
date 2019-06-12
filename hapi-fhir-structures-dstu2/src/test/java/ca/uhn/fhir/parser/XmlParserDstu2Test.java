@@ -2836,7 +2836,6 @@ public class XmlParserDstu2Test {
   
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

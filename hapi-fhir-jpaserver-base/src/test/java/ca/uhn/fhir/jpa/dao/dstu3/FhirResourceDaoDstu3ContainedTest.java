@@ -15,7 +15,6 @@ public class FhirResourceDaoDstu3ContainedTest extends BaseJpaDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

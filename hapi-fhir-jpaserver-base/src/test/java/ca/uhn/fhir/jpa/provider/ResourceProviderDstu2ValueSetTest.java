@@ -33,7 +33,6 @@ public class ResourceProviderDstu2ValueSetTest extends BaseResourceProviderDstu2
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

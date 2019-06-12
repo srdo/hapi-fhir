@@ -132,7 +132,6 @@ public class ServeMediaResourceRawInterceptorTest {
 	public static void afterClassClearContext() throws Exception {
         JettyUtil.closeServer(ourServer);
 		ourClient.close();
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

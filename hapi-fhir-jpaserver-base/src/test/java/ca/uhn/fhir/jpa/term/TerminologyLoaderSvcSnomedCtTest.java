@@ -151,7 +151,6 @@ public class TerminologyLoaderSvcSnomedCtTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

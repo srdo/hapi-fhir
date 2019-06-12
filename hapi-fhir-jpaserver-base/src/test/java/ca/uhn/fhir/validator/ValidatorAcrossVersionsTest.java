@@ -22,7 +22,6 @@ public class ValidatorAcrossVersionsTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@Test

@@ -669,7 +669,6 @@ public class AuthorizationInterceptorResourceProviderR4Test extends BaseResource
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

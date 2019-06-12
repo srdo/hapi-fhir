@@ -39,7 +39,6 @@ public class ProvidedResourceScannerTest extends TestCase {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

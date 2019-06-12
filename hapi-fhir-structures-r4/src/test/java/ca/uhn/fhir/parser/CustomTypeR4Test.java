@@ -36,7 +36,6 @@ public class CustomTypeR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@SuppressWarnings("serial")

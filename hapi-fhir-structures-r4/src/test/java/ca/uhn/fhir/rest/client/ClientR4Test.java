@@ -1292,7 +1292,6 @@ public class ClientR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	private static String getPatientFeedWithOneResult() {

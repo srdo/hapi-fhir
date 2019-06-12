@@ -120,7 +120,6 @@ public class CustomTypeServerDstu2_1 {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
 		JettyUtil.closeServer(ourServer);
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

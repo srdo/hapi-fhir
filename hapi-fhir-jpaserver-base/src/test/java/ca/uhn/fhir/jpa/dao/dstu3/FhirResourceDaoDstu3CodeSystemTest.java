@@ -17,7 +17,6 @@ public class FhirResourceDaoDstu3CodeSystemTest extends BaseJpaDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 		BaseHapiTerminologySvcImpl.setForceSaveDeferredAlwaysForUnitTest(false);
 	}
 

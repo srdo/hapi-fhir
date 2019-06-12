@@ -39,6 +39,5 @@ public class JsonLikeParserDstu2Test {
 	
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 }

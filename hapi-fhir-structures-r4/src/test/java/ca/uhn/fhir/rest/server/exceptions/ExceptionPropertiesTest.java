@@ -86,7 +86,6 @@ public class ExceptionPropertiesTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

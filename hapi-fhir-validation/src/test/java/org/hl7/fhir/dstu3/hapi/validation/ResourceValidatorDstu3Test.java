@@ -469,7 +469,6 @@ public class ResourceValidatorDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@ResourceDef(name = "Patient")

@@ -184,7 +184,6 @@ public class TerminologyUploaderProviderR4Test extends BaseResourceProviderR4Tes
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

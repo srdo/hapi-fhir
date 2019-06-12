@@ -164,7 +164,6 @@ public class GraphQLR4ProviderTest {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
 		JettyUtil.closeServer(ourServer);
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

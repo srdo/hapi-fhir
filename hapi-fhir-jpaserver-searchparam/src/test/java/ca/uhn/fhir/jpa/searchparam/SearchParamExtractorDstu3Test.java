@@ -95,7 +95,6 @@ public class SearchParamExtractorDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 	
 	@BeforeClass

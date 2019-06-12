@@ -21,7 +21,6 @@ public class EmptyElementWithExtensionDstu2Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

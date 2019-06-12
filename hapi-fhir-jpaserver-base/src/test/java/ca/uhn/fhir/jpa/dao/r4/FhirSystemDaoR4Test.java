@@ -3770,7 +3770,6 @@ public class FhirSystemDaoR4Test extends BaseJpaR4SystemTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

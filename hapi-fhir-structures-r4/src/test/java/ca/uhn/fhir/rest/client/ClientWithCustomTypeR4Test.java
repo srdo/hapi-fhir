@@ -41,7 +41,6 @@ public class ClientWithCustomTypeR4Test {
 
   @AfterClass
   public static void afterClassClearContext() {
-    TestUtil.clearAllStaticFieldsForUnitTest();
   }
 
   @Before

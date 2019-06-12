@@ -33,7 +33,6 @@ public class InvalidResourceTypeTest {
 
  	@AfterClass
  	public static void afterClassClearContext() {
- 		TestUtil.clearAllStaticFieldsForUnitTest();
  	}
 
 }

@@ -240,7 +240,6 @@ public class IncomingRequestAddressStrategyTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

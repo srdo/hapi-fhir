@@ -940,7 +940,6 @@ public class GenericClientDstu3IT {
 	
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

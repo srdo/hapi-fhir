@@ -155,7 +155,6 @@ public class PlainProviderR4Test {
 	
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	private static Organization createOrganization() {

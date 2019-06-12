@@ -93,7 +93,6 @@ public class PagingMultinodeProviderDstu3Test extends BaseResourceProviderDstu3T
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

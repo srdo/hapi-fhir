@@ -65,7 +65,6 @@ public class BaseThymeleafNarrativeGeneratorTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

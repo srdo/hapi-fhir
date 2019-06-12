@@ -127,6 +127,5 @@ public class SchematronValidationR4QuestionnaireTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 }

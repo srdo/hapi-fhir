@@ -226,7 +226,6 @@ public class TerminologyUploaderProviderDstu3Test extends BaseResourceProviderDs
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

@@ -251,7 +251,6 @@ public class CreateTest {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
 		ourServer.stop();
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 	@BeforeClass
 	public static void beforeClass() throws Exception {

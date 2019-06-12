@@ -1462,6 +1462,5 @@ public class TerminologySvcImplR4Test extends BaseJpaR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 }

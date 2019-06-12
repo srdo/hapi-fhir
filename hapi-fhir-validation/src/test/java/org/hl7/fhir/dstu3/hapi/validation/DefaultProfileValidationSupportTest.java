@@ -29,7 +29,6 @@ public class DefaultProfileValidationSupportTest {
 	
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

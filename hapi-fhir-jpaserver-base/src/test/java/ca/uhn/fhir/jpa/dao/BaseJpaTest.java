@@ -361,7 +361,6 @@ public abstract class BaseJpaTest {
 	@SuppressWarnings("RedundantThrows")
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@AfterClass

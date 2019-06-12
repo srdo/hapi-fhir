@@ -3324,7 +3324,6 @@ public class XmlParserDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	public static void compareXml(String content, String reEncoded) {

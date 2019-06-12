@@ -111,7 +111,6 @@ public class FhirTerserTest {
 
   @AfterClass
   public static void afterClassClearContext() {
-    TestUtil.clearAllStaticFieldsForUnitTest();
   }
 
 }

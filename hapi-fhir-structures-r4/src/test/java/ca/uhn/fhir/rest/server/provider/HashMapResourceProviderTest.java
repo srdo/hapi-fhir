@@ -308,7 +308,6 @@ public class HashMapResourceProviderTest {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
 		JettyUtil.closeServer(ourListenerServer);
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

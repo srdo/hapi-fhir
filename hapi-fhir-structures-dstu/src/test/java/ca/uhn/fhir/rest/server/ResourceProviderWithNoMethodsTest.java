@@ -111,7 +111,6 @@ public class ResourceProviderWithNoMethodsTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

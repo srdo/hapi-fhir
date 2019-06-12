@@ -213,7 +213,6 @@ public class CreateDstu2_1Test {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
 		JettyUtil.closeServer(ourServer);
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

@@ -141,7 +141,6 @@ public class FhirResourceDaoDstu3InvalidSubscriptionTest extends BaseJpaDstu3Tes
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

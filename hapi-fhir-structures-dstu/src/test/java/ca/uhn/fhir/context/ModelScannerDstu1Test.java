@@ -134,7 +134,6 @@ public class ModelScannerDstu1Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

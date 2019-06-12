@@ -158,7 +158,6 @@ public class NonGenericClientR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 	
 	@BeforeClass

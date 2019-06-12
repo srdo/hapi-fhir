@@ -98,7 +98,6 @@ public class BasicAuthInterceptorTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

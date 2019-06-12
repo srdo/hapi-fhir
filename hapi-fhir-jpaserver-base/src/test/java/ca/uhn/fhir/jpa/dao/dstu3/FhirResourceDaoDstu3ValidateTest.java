@@ -428,7 +428,6 @@ public class FhirResourceDaoDstu3ValidateTest extends BaseJpaDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

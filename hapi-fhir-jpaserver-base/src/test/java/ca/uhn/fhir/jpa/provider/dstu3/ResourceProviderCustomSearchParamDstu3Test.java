@@ -430,7 +430,6 @@ public class ResourceProviderCustomSearchParamDstu3Test extends BaseResourceProv
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

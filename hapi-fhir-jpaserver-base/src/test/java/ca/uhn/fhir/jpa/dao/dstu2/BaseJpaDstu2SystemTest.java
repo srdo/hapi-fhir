@@ -21,7 +21,6 @@ public abstract class BaseJpaDstu2SystemTest extends BaseJpaDstu2Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

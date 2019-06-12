@@ -404,7 +404,6 @@ public class TerminologyLoaderSvcLoincTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

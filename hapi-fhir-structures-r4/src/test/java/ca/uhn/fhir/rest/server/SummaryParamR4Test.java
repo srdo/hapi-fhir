@@ -368,7 +368,6 @@ public class SummaryParamR4Test {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
 		JettyUtil.closeServer(ourServer);
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

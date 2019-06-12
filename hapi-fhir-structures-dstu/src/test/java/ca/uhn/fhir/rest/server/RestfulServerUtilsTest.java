@@ -62,7 +62,6 @@ public class RestfulServerUtilsTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

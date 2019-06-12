@@ -33,7 +33,6 @@ public class JaxRsPatientProviderDstu3Test {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
         JettyUtil.closeServer(jettyServer);
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

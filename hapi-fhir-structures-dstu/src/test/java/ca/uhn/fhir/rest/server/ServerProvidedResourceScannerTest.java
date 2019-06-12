@@ -114,7 +114,6 @@ public class ServerProvidedResourceScannerTest extends TestCase {
 
  	@AfterClass
  	public static void afterClassClearContext() {
- 		TestUtil.clearAllStaticFieldsForUnitTest();
  	}
 
 }

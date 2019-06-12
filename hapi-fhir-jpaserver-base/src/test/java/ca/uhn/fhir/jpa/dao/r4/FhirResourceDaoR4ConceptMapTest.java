@@ -1039,6 +1039,5 @@ public class FhirResourceDaoR4ConceptMapTest extends BaseJpaR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 }

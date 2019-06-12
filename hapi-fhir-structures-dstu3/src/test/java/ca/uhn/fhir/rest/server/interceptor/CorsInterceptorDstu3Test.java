@@ -145,7 +145,6 @@ public class CorsInterceptorDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 	
 

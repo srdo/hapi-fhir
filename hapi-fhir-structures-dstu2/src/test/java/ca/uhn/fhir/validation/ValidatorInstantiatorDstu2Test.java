@@ -14,7 +14,6 @@ public class ValidatorInstantiatorDstu2Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

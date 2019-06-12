@@ -36,7 +36,6 @@ public class CustomTypeDstu3Test {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@SuppressWarnings("serial")

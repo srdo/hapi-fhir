@@ -9,7 +9,6 @@ public class FhirSystemDaoDstu3SearchTest extends BaseJpaDstu3SystemTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

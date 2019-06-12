@@ -40,7 +40,6 @@ public class CustomThymeleafNarrativeGeneratorTest {
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 }

@@ -89,7 +89,6 @@ public class ExceptionHandlingInterceptorTest {
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
 		JettyUtil.closeServer(ourServer);
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 	@BeforeClass
 	public static void beforeClass() throws Exception {

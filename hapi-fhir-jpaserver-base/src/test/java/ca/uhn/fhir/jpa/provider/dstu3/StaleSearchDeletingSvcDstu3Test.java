@@ -28,7 +28,6 @@ public class StaleSearchDeletingSvcDstu3Test extends BaseResourceProviderDstu3Te
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

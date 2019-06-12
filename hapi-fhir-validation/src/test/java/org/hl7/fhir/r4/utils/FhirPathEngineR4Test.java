@@ -146,7 +146,6 @@ public class FhirPathEngineR4Test {
 
 	@AfterClass
 	public static void afterClassClearContext() throws Exception {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	@BeforeClass

@@ -193,7 +193,6 @@ public class Dstu1BundleFactoryTest {
 
  	@AfterClass
  	public static void afterClassClearContext() {
- 		TestUtil.clearAllStaticFieldsForUnitTest();
  	}
 
 }

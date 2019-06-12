@@ -300,7 +300,6 @@ public class ResourceProviderDstu3CodeSystemTest extends BaseResourceProviderDst
 
 	@AfterClass
 	public static void afterClassClearContext() {
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 

@@ -346,7 +346,6 @@ public abstract class BaseJpaDstu3Test extends BaseJpaTest {
 	public static void afterClassClearContextBaseJpaDstu3Test() {
 		ourValueSetDao.purgeCaches();
 		ourJpaValidationSupportChainDstu3.flush();
-		TestUtil.clearAllStaticFieldsForUnitTest();
 	}
 
 	/**
